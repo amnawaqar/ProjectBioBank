@@ -1,0 +1,108 @@
+﻿@page "/collection"
+@using BioBank.Shared.Models;
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+@inject IJSRuntime JsRuntime
+
+<PageTitle>BioBank</PageTitle>
+@if (collections == null)
+{
+    <p><em>Error loading data..........Please Refresh the Page</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>DieaseTerm</th>
+                <th>Title</th>
+                <th>Samples</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var material in collections)
+            {
+                <tr>
+                    <td>@material.Id</td>
+                    <td>@material.DieaseTerm</td>
+                    <td>@material.Title</td>
+                    <td><button class="btn btn-primary" @onclick="() => RedirecttoSamplesDetail(material.Id)">Details</button></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    if (showAdd)
+    {
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>DieaseTerm</th>
+                    <th>Title</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input @bind="bioBankService.DieaseTerm" required /></td>
+                    <td><input @bind="bioBankService.Title" required /></td>
+                    <td><button class="btn btn-primary" @onclick="() => Save()">Save</button></td>
+                </tr>
+            </tbody>
+        </table>
+        }
+    <button class="btn btn-primary" @onclick="() => Add()" disabled="@showAdd">Add</button>
+}
+
+@code {
+    private List<Tissue> collections;
+    private bool showAdd = false;
+    Tissue bioBankService = new Tissue();
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            collections = await Http.GetFromJsonAsync<List<Tissue>>("api/BioBank");
+        }
+        catch (HttpRequestException ex)
+        {
+            ShowAlert(ex.ToString());
+        }
+    }
+    private void Add()
+    {
+        showAdd = !showAdd;
+    }
+    private async void Save()
+    {
+        if (bioBankService.DieaseTerm is null || bioBankService.Title is null)
+        { ShowAlert("Both Fields are manadatory"); }
+        else
+        {
+            var response = await Http.PostAsJsonAsync<Tissue>("api/BioBank", bioBankService);
+            if (response.IsSuccessStatusCode)
+            {
+                string responseMessage = await response.Content.ReadAsStringAsync();
+                ShowAlert(responseMessage);
+                ScreenRefresh();
+            }
+            else
+            {
+                ShowAlert("Error saving data. Status code: " + response.StatusCode);
+            }
+        }
+    }
+    private async void ShowAlert(string message)
+    {
+        await JsRuntime.InvokeVoidAsync("alert", message);
+       
+    }
+    private async void ScreenRefresh()
+    {
+        await JsRuntime.InvokeVoidAsync("location.reload");
+    }
+    private void RedirecttoSamplesDetail(int id)
+    {
+        NavigationManager.NavigateTo($"/sampledetail/{id}");
+    }
+}
+

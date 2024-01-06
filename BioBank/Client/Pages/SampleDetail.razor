@@ -1,0 +1,116 @@
+﻿@page "/sampledetail/{Id:int}"
+@using BioBank.Shared;
+@using BioBank.Shared.Models;
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+@inject IJSRuntime JsRuntime
+
+<PageTitle>Sample Details</PageTitle>
+
+<h1>Details of the Sample</h1>
+
+@if (collections == null)
+{
+    <p><em>No Data Found</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Donor Count</th>
+                <th>Material Type</th>
+                <th>Last updated</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var material in collections)
+            {
+                <tr>
+
+                    <td>@material.Sample_Id</td>
+                    <td>@material.Donor_Count</td>
+                    <td>@material.Material_Type</td>
+                    <td>@material.Last_updated</td>
+
+                </tr>
+            }
+        </tbody>
+    </table>
+    if (showAdd)
+    {
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Donor Count</th>
+                    <th>Material Type</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr>
+                    <td><input @bind="samplesService.Donor_Count" /></td>
+                    <td><input @bind="samplesService.Material_Type" /></td>
+                    <td><button class="btn btn-primary" @onclick="() => Save()">Save</button></td>
+                </tr>
+            </tbody>
+        </table>
+    } 
+    }
+    <button class="btn btn-primary" @onclick="() => Add()" disabled="@showAdd">Add</button>
+    @code {
+    private List<Samples> collections;
+    private bool showAdd = false;
+    Samples samplesService = new Samples();
+    
+    [Parameter]
+    public int Id { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            collections = await Http.GetFromJsonAsync<List<Samples>>($"api/Samples/2");
+        }
+        catch (HttpRequestException ex)
+        {
+            ShowAlert(ex.ToString());
+        }
+    }
+    private void Add()
+    {
+        showAdd = !showAdd;
+    }
+    private async void Save()
+    {
+       
+        if ( samplesService.Material_Type is null)
+        { ShowAlert("Both Fields are manadatory"); }
+        else
+        {
+            samplesService.BioBankId =Id;
+            var response = await Http.PostAsJsonAsync<Samples>($"api/Samples", samplesService);
+            if (response.IsSuccessStatusCode)
+            {
+                string responseMessage = await response.Content.ReadAsStringAsync();
+                ShowAlert(responseMessage);
+                ScreenRefresh();
+            }
+            else
+            {
+                ShowAlert("Error saving data. Status code: " + response.StatusCode);
+            }
+        }
+    }
+    private async void ShowAlert(string message)
+    {
+        await JsRuntime.InvokeVoidAsync("alert", message);
+    }
+    private async void ScreenRefresh()
+    {
+        await JsRuntime.InvokeVoidAsync("location.reload");
+    }
+}
+
