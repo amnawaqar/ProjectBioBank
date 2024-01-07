@@ -18,11 +18,11 @@ namespace BioBank.Server.Controllers
         }
         // GET: api/<BioBankController>
         [HttpGet]
-        public IActionResult Get()
+        public async Task<IActionResult> Get()
         {
             try
             {
-                List<Shared.Models.Tissue> bioBankServices = _dbService.GetBioBankCollections();
+                List<Tissue> bioBankServices = _dbService.GetBioBankCollections();
                 return Ok(bioBankServices);
             }
             catch (Exception ex)

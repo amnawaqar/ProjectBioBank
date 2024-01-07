@@ -1,0 +1,12 @@
+C:\Users\user\source\repos\BioBank\BioBank\Shared\bin\Debug\net6.0\BioBank.Shared.deps.json
+C:\Users\user\source\repos\BioBank\BioBank\Shared\bin\Debug\net6.0\BioBank.Shared.dll
+C:\Users\user\source\repos\BioBank\BioBank\Shared\bin\Debug\net6.0\BioBank.Shared.pdb
+C:\Users\user\source\repos\BioBank\BioBank\Shared\obj\Debug\net6.0\BioBank.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\source\repos\BioBank\BioBank\Shared\obj\Debug\net6.0\BioBank.Shared.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\BioBank\BioBank\Shared\obj\Debug\net6.0\BioBank.Shared.AssemblyInfo.cs
+C:\Users\user\source\repos\BioBank\BioBank\Shared\obj\Debug\net6.0\BioBank.Shared.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\BioBank\BioBank\Shared\obj\Debug\net6.0\BioBank.Shared.dll
+C:\Users\user\source\repos\BioBank\BioBank\Shared\obj\Debug\net6.0\refint\BioBank.Shared.dll
+C:\Users\user\source\repos\BioBank\BioBank\Shared\obj\Debug\net6.0\BioBank.Shared.pdb
+C:\Users\user\source\repos\BioBank\BioBank\Shared\obj\Debug\net6.0\ref\BioBank.Shared.dll
+C:\Users\user\source\repos\BioBank\BioBank\Shared\obj\Debug\net6.0\BioBank.Shared.csproj.AssemblyReference.cache

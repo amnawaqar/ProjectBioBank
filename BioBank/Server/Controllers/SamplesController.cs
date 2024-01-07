@@ -17,7 +17,7 @@ namespace BioBank.Server.Controllers
         }
         // GET api/<SamplesController>/5
         [HttpGet("{id}")]
-        public IActionResult Get(int id)
+        public async Task<IActionResult>  Get(int id)
         {
             try
             {

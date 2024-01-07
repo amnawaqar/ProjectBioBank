@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34003.232
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BioBank.Server", "BioBank\Server\BioBank.Server.csproj", "{34D01D8C-A6F1-4F73-A459-60249FC6AFD7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BioBank.Server", "BioBank\Server\BioBank.Server.csproj", "{34D01D8C-A6F1-4F73-A459-60249FC6AFD7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BioBank.Client", "BioBank\Client\BioBank.Client.csproj", "{60430D4F-2260-461E-91D8-39F5E6F309E9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BioBank.Client", "BioBank\Client\BioBank.Client.csproj", "{60430D4F-2260-461E-91D8-39F5E6F309E9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BioBank.Shared", "BioBank\Shared\BioBank.Shared.csproj", "{9750CA0E-5522-457F-8894-111EACB71AC9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BioBank.Shared", "BioBank\Shared\BioBank.Shared.csproj", "{9750CA0E-5522-457F-8894-111EACB71AC9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BioBankTesting", "BioBankTesting\BioBankTesting.csproj", "{D1D5866D-F39D-4339-BF72-6472F646B234}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{9750CA0E-5522-457F-8894-111EACB71AC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9750CA0E-5522-457F-8894-111EACB71AC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9750CA0E-5522-457F-8894-111EACB71AC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1D5866D-F39D-4339-BF72-6472F646B234}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1D5866D-F39D-4339-BF72-6472F646B234}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1D5866D-F39D-4339-BF72-6472F646B234}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1D5866D-F39D-4339-BF72-6472F646B234}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
