@@ -220,14 +220,14 @@
       "netstandard.dll": "sha256-OUZMjYvE6WNC75Ypitp3ukl0+FlDbSW+OYEIsU7XlgQ=",
       "System.Private.CoreLib.dll": "sha256-uJANsJB4HA9iyaKf1ryCSbtypfL2uQZWxXKIn0Fz5+c=",
       "BioBank.Shared.dll": "sha256-c5R\/0Lq88qPMw2\/rlTKaJh\/IYmbe8fj0VtReyLJyV1w=",
-      "BioBank.Client.dll": "sha256-LN\/jSVJFD5ZPvtuvNs7iQAox9iSrI1cBrfuyG9iPP5k="
+      "BioBank.Client.dll": "sha256-U0cRA1G5adAsiLiRi3nrpZYsLxIHzIJRl4BRyHwEI4c="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
       "BioBank.Shared.pdb": "sha256-bZpDyDVNGpwFTC4ngNlaeohmG340ikoTNu0syw6ByxA=",
-      "BioBank.Client.pdb": "sha256-YDhxzgQzcf\/iGGsRYcIHBiUvDAeoohYW\/+jWRiV5FF8="
+      "BioBank.Client.pdb": "sha256-2keXXn1eHd9TqMLBVrYEviedvTcqPGYVvECRx5TfQ7g="
     },
     "runtime": {
       "dotnet.6.0.21.kppiy4eyos.js": "sha256-0OV6gibFzyVtG7NXEj8a6vG3u8Cbzv4l9kkEathZjQ8=",

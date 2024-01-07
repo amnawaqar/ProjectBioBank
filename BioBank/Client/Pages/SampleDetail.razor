@@ -51,7 +51,7 @@ else
             <tbody>
 
                 <tr>
-                    <td><input @bind="samplesService.Donor_Count" /></td>
+                    <td><input @bind="samplesService.Donor_Count" type="number" /></td>
                     <td><input @bind="samplesService.Material_Type" /></td>
                     <td><button class="btn btn-primary" @onclick="() => Save()">Save</button></td>
                 </tr>
@@ -72,7 +72,7 @@ else
     {
         try
         {
-            collections = await Http.GetFromJsonAsync<List<Samples>>($"api/Samples/2");
+            collections = await Http.GetFromJsonAsync<List<Samples>>($"api/Samples/{Id}");
         }
         catch (HttpRequestException ex)
         {
