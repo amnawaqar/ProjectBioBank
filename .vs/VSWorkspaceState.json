@@ -1,6 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\.github",
+    "\\BioBank",
+    "\\BioBankTesting",
+    "\\BioBank\\Client",
+    "\\BioBank\\Server"
   ],
   "SelectedNode": "\\BioBank.sln",
   "PreviewInSolutionExplorer": false

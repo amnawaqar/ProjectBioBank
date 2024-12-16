@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\source\\repos\\BioBank\\BioBankTesting\\BioBankTesting.csproj": {}
+    "C:\\Users\\user\\source\\repos\\ProjectBioBank\\BioBankTesting\\BioBankTesting.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\source\\repos\\BioBank\\BioBankTesting\\BioBankTesting.csproj": {
+    "C:\\Users\\user\\source\\repos\\ProjectBioBank\\BioBankTesting\\BioBankTesting.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\source\\repos\\BioBank\\BioBankTesting\\BioBankTesting.csproj",
+        "projectUniqueName": "C:\\Users\\user\\source\\repos\\ProjectBioBank\\BioBankTesting\\BioBankTesting.csproj",
         "projectName": "BioBankTesting",
-        "projectPath": "C:\\Users\\user\\source\\repos\\BioBank\\BioBankTesting\\BioBankTesting.csproj",
+        "projectPath": "C:\\Users\\user\\source\\repos\\ProjectBioBank\\BioBankTesting\\BioBankTesting.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\source\\repos\\BioBank\\BioBankTesting\\obj\\",
+        "outputPath": "C:\\Users\\user\\source\\repos\\ProjectBioBank\\BioBankTesting\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -29,11 +29,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\user\\source\\repos\\BioBank\\BioBank\\Server\\BioBank.Server.csproj": {
-                "projectPath": "C:\\Users\\user\\source\\repos\\BioBank\\BioBank\\Server\\BioBank.Server.csproj"
+              "C:\\Users\\user\\source\\repos\\ProjectBioBank\\BioBank\\Server\\BioBank.Server.csproj": {
+                "projectPath": "C:\\Users\\user\\source\\repos\\ProjectBioBank\\BioBank\\Server\\BioBank.Server.csproj"
               },
-              "C:\\Users\\user\\source\\repos\\BioBank\\BioBank\\Shared\\BioBank.Shared.csproj": {
-                "projectPath": "C:\\Users\\user\\source\\repos\\BioBank\\BioBank\\Shared\\BioBank.Shared.csproj"
+              "C:\\Users\\user\\source\\repos\\ProjectBioBank\\BioBank\\Shared\\BioBank.Shared.csproj": {
+                "projectPath": "C:\\Users\\user\\source\\repos\\ProjectBioBank\\BioBank\\Shared\\BioBank.Shared.csproj"
               }
             }
           }
@@ -51,6 +51,12 @@
             "FluentAssertions": {
               "target": "Package",
               "version": "[6.12.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.0, )"
             },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
@@ -101,14 +107,14 @@
         }
       }
     },
-    "C:\\Users\\user\\source\\repos\\BioBank\\BioBank\\Client\\BioBank.Client.csproj": {
+    "C:\\Users\\user\\source\\repos\\ProjectBioBank\\BioBank\\Client\\BioBank.Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\source\\repos\\BioBank\\BioBank\\Client\\BioBank.Client.csproj",
+        "projectUniqueName": "C:\\Users\\user\\source\\repos\\ProjectBioBank\\BioBank\\Client\\BioBank.Client.csproj",
         "projectName": "BioBank.Client",
-        "projectPath": "C:\\Users\\user\\source\\repos\\BioBank\\BioBank\\Client\\BioBank.Client.csproj",
+        "projectPath": "C:\\Users\\user\\source\\repos\\ProjectBioBank\\BioBank\\Client\\BioBank.Client.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\source\\repos\\BioBank\\BioBank\\Client\\obj\\",
+        "outputPath": "C:\\Users\\user\\source\\repos\\ProjectBioBank\\BioBank\\Client\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -126,8 +132,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\user\\source\\repos\\BioBank\\BioBank\\Shared\\BioBank.Shared.csproj": {
-                "projectPath": "C:\\Users\\user\\source\\repos\\BioBank\\BioBank\\Shared\\BioBank.Shared.csproj"
+              "C:\\Users\\user\\source\\repos\\ProjectBioBank\\BioBank\\Shared\\BioBank.Shared.csproj": {
+                "projectPath": "C:\\Users\\user\\source\\repos\\ProjectBioBank\\BioBank\\Shared\\BioBank.Shared.csproj"
               }
             }
           }
@@ -154,6 +160,12 @@
             "Microsoft.Data.SqlClient": {
               "target": "Package",
               "version": "[5.1.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.0, )"
             },
             "System.Data.SqlClient": {
               "target": "Package",
@@ -191,14 +203,14 @@
         }
       }
     },
-    "C:\\Users\\user\\source\\repos\\BioBank\\BioBank\\Server\\BioBank.Server.csproj": {
+    "C:\\Users\\user\\source\\repos\\ProjectBioBank\\BioBank\\Server\\BioBank.Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\source\\repos\\BioBank\\BioBank\\Server\\BioBank.Server.csproj",
+        "projectUniqueName": "C:\\Users\\user\\source\\repos\\ProjectBioBank\\BioBank\\Server\\BioBank.Server.csproj",
         "projectName": "BioBank.Server",
-        "projectPath": "C:\\Users\\user\\source\\repos\\BioBank\\BioBank\\Server\\BioBank.Server.csproj",
+        "projectPath": "C:\\Users\\user\\source\\repos\\ProjectBioBank\\BioBank\\Server\\BioBank.Server.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\source\\repos\\BioBank\\BioBank\\Server\\obj\\",
+        "outputPath": "C:\\Users\\user\\source\\repos\\ProjectBioBank\\BioBank\\Server\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -216,11 +228,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\user\\source\\repos\\BioBank\\BioBank\\Client\\BioBank.Client.csproj": {
-                "projectPath": "C:\\Users\\user\\source\\repos\\BioBank\\BioBank\\Client\\BioBank.Client.csproj"
+              "C:\\Users\\user\\source\\repos\\ProjectBioBank\\BioBank\\Client\\BioBank.Client.csproj": {
+                "projectPath": "C:\\Users\\user\\source\\repos\\ProjectBioBank\\BioBank\\Client\\BioBank.Client.csproj"
               },
-              "C:\\Users\\user\\source\\repos\\BioBank\\BioBank\\Shared\\BioBank.Shared.csproj": {
-                "projectPath": "C:\\Users\\user\\source\\repos\\BioBank\\BioBank\\Shared\\BioBank.Shared.csproj"
+              "C:\\Users\\user\\source\\repos\\ProjectBioBank\\BioBank\\Shared\\BioBank.Shared.csproj": {
+                "projectPath": "C:\\Users\\user\\source\\repos\\ProjectBioBank\\BioBank\\Shared\\BioBank.Shared.csproj"
               }
             }
           }
@@ -251,7 +263,11 @@
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[6.0.23, )"
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.19.4, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
@@ -285,14 +301,14 @@
         }
       }
     },
-    "C:\\Users\\user\\source\\repos\\BioBank\\BioBank\\Shared\\BioBank.Shared.csproj": {
+    "C:\\Users\\user\\source\\repos\\ProjectBioBank\\BioBank\\Shared\\BioBank.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\source\\repos\\BioBank\\BioBank\\Shared\\BioBank.Shared.csproj",
+        "projectUniqueName": "C:\\Users\\user\\source\\repos\\ProjectBioBank\\BioBank\\Shared\\BioBank.Shared.csproj",
         "projectName": "BioBank.Shared",
-        "projectPath": "C:\\Users\\user\\source\\repos\\BioBank\\BioBank\\Shared\\BioBank.Shared.csproj",
+        "projectPath": "C:\\Users\\user\\source\\repos\\ProjectBioBank\\BioBank\\Shared\\BioBank.Shared.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\source\\repos\\BioBank\\BioBank\\Shared\\obj\\",
+        "outputPath": "C:\\Users\\user\\source\\repos\\ProjectBioBank\\BioBank\\Shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -325,6 +341,12 @@
             "Microsoft.Data.SqlClient": {
               "target": "Package",
               "version": "[5.1.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.0, )"
             },
             "Microsoft.Extensions.Configuration.Abstractions": {
               "target": "Package",

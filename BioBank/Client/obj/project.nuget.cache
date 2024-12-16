@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Qpl4wpPRPACau0UPVoqAXWu9n15R35gkTOZ3KyPdnizcpa8jG/BR45sH2oeneaxIpFxPpr6XmNgplIoYk0FJ+g==",
+  "dgSpecHash": "Y16jO2djDRRlzVMKGQAdnRjgCugjlr1iXyiX+R6F5Zdj/Wkotkal1lGp83PZcAoFc569CIzZjNxMPaZLsNDHgQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\source\\repos\\BioBank\\BioBank\\Client\\BioBank.Client.csproj",
+  "projectFilePath": "C:\\Users\\user\\source\\repos\\ProjectBioBank\\BioBank\\Client\\BioBank.Client.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
@@ -18,6 +18,7 @@
     "C:\\Users\\user\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.data.sqlclient\\5.1.2\\microsoft.data.sqlclient.5.1.2.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\5.1.1\\microsoft.data.sqlclient.sni.runtime.5.1.1.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\9.0.0\\microsoft.entityframeworkcore.tools.9.0.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.extensions.configuration\\6.0.0\\microsoft.extensions.configuration.6.0.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.extensions.configuration.binder\\6.0.0\\microsoft.extensions.configuration.binder.6.0.0.nupkg.sha512",

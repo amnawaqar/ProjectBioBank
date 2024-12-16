@@ -1,0 +1,18 @@
+
+
+services:
+  db:
+    container_name: SqlServerContainer
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=MyPass@word
+    ports:
+      - "8002:1433"
+  biobank.server:
+    image: ${DOCKER_REGISTRY-}biobankserver
+    build:
+      context: .
+      dockerfile: BioBank/Server/Dockerfile
+    depends_on:
+      - db

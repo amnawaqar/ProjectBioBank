@@ -219,15 +219,15 @@
       "mscorlib.dll": "sha256-ZQiPq7CHB7vwsbgiGeI63xqAYmfnZVwKnCDxwIIfh68=",
       "netstandard.dll": "sha256-OUZMjYvE6WNC75Ypitp3ukl0+FlDbSW+OYEIsU7XlgQ=",
       "System.Private.CoreLib.dll": "sha256-uJANsJB4HA9iyaKf1ryCSbtypfL2uQZWxXKIn0Fz5+c=",
-      "BioBank.Shared.dll": "sha256-c5R\/0Lq88qPMw2\/rlTKaJh\/IYmbe8fj0VtReyLJyV1w=",
-      "BioBank.Client.dll": "sha256-U0cRA1G5adAsiLiRi3nrpZYsLxIHzIJRl4BRyHwEI4c="
+      "BioBank.Shared.dll": "sha256-nhNcMqvhBsPHrjHY4TFn0IW6GcJIedcb786Bm8BQK\/w=",
+      "BioBank.Client.dll": "sha256-19kZwW\/6yFuHztiyAmA5cPEe2a7BYPtl9idxW7cx10o="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "BioBank.Shared.pdb": "sha256-bZpDyDVNGpwFTC4ngNlaeohmG340ikoTNu0syw6ByxA=",
-      "BioBank.Client.pdb": "sha256-2keXXn1eHd9TqMLBVrYEviedvTcqPGYVvECRx5TfQ7g="
+      "BioBank.Shared.pdb": "sha256-Nk+l5OwXF\/gMd0Gx4FRHsxb0GFCeNQYRh8wLw6HB\/Gc=",
+      "BioBank.Client.pdb": "sha256-eC\/b84xJf2jxrvviWwgri78zT5mxNDKAVb43uungH9g="
     },
     "runtime": {
       "dotnet.6.0.21.kppiy4eyos.js": "sha256-0OV6gibFzyVtG7NXEj8a6vG3u8Cbzv4l9kkEathZjQ8=",

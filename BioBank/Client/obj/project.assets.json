@@ -244,6 +244,9 @@
           }
         }
       },
+      "Microsoft.EntityFrameworkCore.Tools/9.0.0": {
+        "type": "package"
+      },
       "Microsoft.Extensions.Configuration/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -1455,6 +1458,9 @@
         }
       },
       "Microsoft.Data.SqlClient.SNI.runtime/5.1.1": {
+        "type": "package"
+      },
+      "Microsoft.EntityFrameworkCore.Tools/9.0.0": {
         "type": "package"
       },
       "Microsoft.Extensions.Configuration/6.0.0": {
@@ -2828,6 +2834,31 @@
         "runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll",
         "runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll",
         "runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll"
+      ]
+    },
+    "Microsoft.EntityFrameworkCore.Tools/9.0.0": {
+      "sha512": "qjw+3/CaWiWnyVblvKHY11rQKH5eHQDSbtxjgxVhxGJrOpmjZ3JxtD0pjwkr4y/ELubsXr6xDfBcRJSkX/9hWQ==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.tools/9.0.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "docs/PACKAGE.md",
+        "microsoft.entityframeworkcore.tools.9.0.0.nupkg.sha512",
+        "microsoft.entityframeworkcore.tools.nuspec",
+        "tools/EntityFrameworkCore.PS2.psd1",
+        "tools/EntityFrameworkCore.PS2.psm1",
+        "tools/EntityFrameworkCore.psd1",
+        "tools/EntityFrameworkCore.psm1",
+        "tools/about_EntityFrameworkCore.help.txt",
+        "tools/init.ps1",
+        "tools/net472/any/ef.exe",
+        "tools/net472/win-arm64/ef.exe",
+        "tools/net472/win-x86/ef.exe",
+        "tools/netcoreapp2.0/any/ef.dll",
+        "tools/netcoreapp2.0/any/ef.runtimeconfig.json"
       ]
     },
     "Microsoft.Extensions.Configuration/6.0.0": {
@@ -4600,6 +4631,7 @@
       "Microsoft.AspNetCore.Components.WebAssembly >= 6.0.20",
       "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 6.0.20",
       "Microsoft.Data.SqlClient >= 5.1.2",
+      "Microsoft.EntityFrameworkCore.Tools >= 9.0.0",
       "System.Data.SqlClient >= 4.8.5"
     ]
   },
@@ -4609,11 +4641,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\source\\repos\\BioBank\\BioBank\\Client\\BioBank.Client.csproj",
+      "projectUniqueName": "C:\\Users\\user\\source\\repos\\ProjectBioBank\\BioBank\\Client\\BioBank.Client.csproj",
       "projectName": "BioBank.Client",
-      "projectPath": "C:\\Users\\user\\source\\repos\\BioBank\\BioBank\\Client\\BioBank.Client.csproj",
+      "projectPath": "C:\\Users\\user\\source\\repos\\ProjectBioBank\\BioBank\\Client\\BioBank.Client.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\source\\repos\\BioBank\\BioBank\\Client\\obj\\",
+      "outputPath": "C:\\Users\\user\\source\\repos\\ProjectBioBank\\BioBank\\Client\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4631,8 +4663,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\user\\source\\repos\\BioBank\\BioBank\\Shared\\BioBank.Shared.csproj": {
-              "projectPath": "C:\\Users\\user\\source\\repos\\BioBank\\BioBank\\Shared\\BioBank.Shared.csproj"
+            "C:\\Users\\user\\source\\repos\\ProjectBioBank\\BioBank\\Shared\\BioBank.Shared.csproj": {
+              "projectPath": "C:\\Users\\user\\source\\repos\\ProjectBioBank\\BioBank\\Shared\\BioBank.Shared.csproj"
             }
           }
         }
@@ -4659,6 +4691,12 @@
           "Microsoft.Data.SqlClient": {
             "target": "Package",
             "version": "[5.1.2, )"
+          },
+          "Microsoft.EntityFrameworkCore.Tools": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[9.0.0, )"
           },
           "System.Data.SqlClient": {
             "target": "Package",
